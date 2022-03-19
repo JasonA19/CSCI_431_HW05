@@ -5,7 +5,7 @@ function HW05_cja2578_sxg6031_MAIN( )
     cd ../TEST_IMAGES/;
     % Find all files that match this regular expression:
     file_list = dir('*.jpg');
-    for counter = 5 : length( file_list )
+    for counter = 1 : length( file_list )
         fn = file_list(counter).name;
         find_dice_and_dots( fn );
     end
